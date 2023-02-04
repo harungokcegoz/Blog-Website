@@ -3,7 +3,7 @@
 </script>
 <div class="banner">
     <div class="banner__img">
-         <img src="https://github.com/harungokcegoz/Blog-Website/blob/main/2cbdc7b29b8b729db1b0ad933d96d3cbc1f83268.jpg?raw=true" alt="">
+         <img src="https://github.com/harungokcegoz/Blog-Website/blob/main/images/2cbdc7b29b8b729db1b0ad933d96d3cbc1f83268.jpg?raw=true" alt="">
     </div>
    <div class="banner__text">
         <div class="banner__text__title">

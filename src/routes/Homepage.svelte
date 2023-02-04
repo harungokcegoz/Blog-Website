@@ -1,20 +1,19 @@
 <script>
-  import Blogs from "../components/BlogsContainer.svelte";
+import CardContainer from "../components/CardContainer.svelte";
 import Hero from "../components/Hero.svelte"
 
-  
 
-
+   
 </script>
 <div class="container">
     <div class="container__item">
         <Hero/>
     </div>
-    <div class="item">
-        <Blogs/>
+    <div class="container__item">
+        <CardContainer title = "De nieuwste blogs" />
     </div>
-    <div class="item">
-
+    <div class="container__item">
+        <CardContainer title = "Opkomende events"/>
     </div>
 </div>
 
