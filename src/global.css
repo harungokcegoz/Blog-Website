@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-	color: #333;
+	color: black;
 	margin: 0;
 	padding: 0px;
 	box-sizing: border-box;
@@ -13,12 +13,12 @@ body {
 }
 
 a {
-	color: rgb(0,100,200);
+	color: black;
 	text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:visited {
@@ -61,3 +61,11 @@ button:not(:disabled):active {
 button:focus {
 	border-color: #666;
 }
+/* custom */
+.bx--tabs-trigger {
+	visibility: hidden;
+}
+.bx--tabs__nav-item:hover a{
+	color: white;
+}
+

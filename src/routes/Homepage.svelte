@@ -1,24 +1,38 @@
 <script>
-import CardContainer from "../components/CardContainer.svelte";
-import Hero from "../components/Hero.svelte"
+import BlogContainer from "../components/Homepage/BlogContainer/BlogContainer.svelte";
+  import ContainerTab from "../components/Homepage/EventContainer/ContainerTab.svelte";
+import Banner from "../components/Homepage/HomepageBanner.svelte"
+
 
 
    
 </script>
 <div class="container">
     <div class="container__item">
-        <Hero/>
+        <Banner/>
     </div>
     <div class="container__item">
-        <CardContainer title = "De nieuwste blogs" />
+        <div class="title">
+            <h1>
+                De nieuwste blogs
+            </h1>
+        </div>
+        <BlogContainer title = "De nieuwste blogs" />
     </div>
-    <div class="container__item">
-        <CardContainer title = "Opkomende events"/>
+    <div class="container__item" style="margin: auto;">
+        <!-- I tried to use one/same card container for both sections but since I didn't fetch anything I couldn't pass the data through the component. So I copied blog container and pasted on the event one -->
+        <div class="title">
+            <h1>
+                Opkomende Events
+            </h1>
+        </div>
+        <ContainerTab/>
     </div>
 </div>
 
 
 <style>
+
     .container{
         display: flex;
         flex-direction: column;
@@ -33,4 +47,9 @@ import Hero from "../components/Hero.svelte"
         flex-basis: auto;
         align-self: auto;
     }
+    .title{
+          padding: 0em 2em;
+          text-align: center;
+          margin-top: 2em;
+      }
 </style>

@@ -30,7 +30,7 @@
 	</div>
 
 	<div class="container__item">
-		<footer class="container__item__footer">
+		<footer class="container__item__footer" style="margin-top: 4em;">
 			<Footer/>
 		</footer>
 	</div>
