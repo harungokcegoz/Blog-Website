@@ -44,7 +44,7 @@
           display: block;
           flex-shrink: 1;
           flex-basis: auto;
-          align-self: auto;
+          align-self: center;
       }
       @media (max-width: 1050px) {
           .cards__container{

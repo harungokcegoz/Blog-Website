@@ -14,7 +14,7 @@
                 <div class="tabContainer__item__tab">
                    <Tab label="Events {cityData.city}"/>  
                 </div>
-            
+        
             {/each}  
         </div>
         <svelte:fragment slot="content">
@@ -35,10 +35,9 @@
     .tabContainer__item{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
+        /* justify-content: center; */
         align-content: stretch;
+        align-self: center;
     }
     .tabContainer__item__tab{
         display: block;
@@ -57,6 +56,16 @@
         border: none;
         color: white;
     }
+    @media (max-width: 1050px) {
+        .tabContainer__item {
+            justify-content: center;
+        }
+        .tabContainer__item__tab{
+            padding: 0.5em;
+            
+        }
+       
+    } 
 
    </style>
   

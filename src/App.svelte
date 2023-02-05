@@ -4,11 +4,15 @@
   import Homepage from './routes/Homepage.svelte';
   import Header from './components/Header/Header.svelte';
   import Footer from './components/Footer/Footer.svelte';
+  import LoginPage from './routes/LoginPage.svelte';
+  import Blogs from './routes/BlogsPage.svelte';
 
 
 	let page;
 
 	router("/", () => {page = Homepage});
+	router("/login", () => {page = LoginPage});
+	router("/blogs", () => {page = Blogs});
 
 	router.start();
 
@@ -57,5 +61,12 @@
 		padding: 0.5em 8em;
 		position: sticky;
 		align-items: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+		border-bottom: 1px rgba(0, 0, 0, 0.22) solid;
 	}
+	@media (max-width: 767px) {
+        *{
+			font-size: small;
+		}
+    } 
 </style>

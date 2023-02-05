@@ -48,6 +48,7 @@
     .container__img{
         grid-area: img;
     }
+    
     .container__img img{
         border-radius: 5px;
         width: 100%;
@@ -66,4 +67,10 @@
         grid-area: link;
     }
    
+    @media (max-width: 767px) {
+        .container {
+            margin-bottom: 1em ;
+            gap: 2px 0px;
+        }
+    } 
 </style>

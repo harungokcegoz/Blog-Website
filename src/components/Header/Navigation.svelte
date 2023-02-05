@@ -1,6 +1,5 @@
 <script>
-
-  import Login from "./Login.svelte";
+import Button from "../Button.svelte";
 import Searcher from "./Searcher.svelte";
 
 
@@ -9,14 +8,14 @@ import Searcher from "./Searcher.svelte";
     <div class="container">
         <div class="container__item">
             <ul class="nav__menu">
-                <li class="nav__menu__item" id="link"><a href="/blog">Blog</a></li>
-                <li class="nav__menu__item" id="link"><a href="/events">Events</a></li>
+                <li class="nav__menu__item" id="link"><a href="/blogs">Blogs</a></li>
+                <li class="nav__menu__item" id="link"><a href="/">Events</a></li>
             </ul> 
         </div>
         <div class="container__item">
             <ul class="nav__menu">
                 <li class="nav__menu__item"><Searcher/></li>
-                <li class="nav__menu__item"><Login/></li>
+                <li class="nav__menu__item"><Button href = "/login" text = "Log In"/></li>
             </ul> 
         </div>
     </div>

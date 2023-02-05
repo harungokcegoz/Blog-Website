@@ -31,7 +31,6 @@
     .cards__container{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: center;
         align-items: flex-start;
         align-content: flex-end;   
@@ -41,11 +40,12 @@
         display: block;
         flex-shrink: 1;
         flex-basis: auto;
-        align-self: auto;
+        align-self: center;
     }
     @media (max-width: 1050px) {
         .cards__container{
             flex-direction: column;
         }
     } 
+
 </style>
