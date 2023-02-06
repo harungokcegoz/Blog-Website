@@ -2,6 +2,7 @@
   import BlogCards from "../components/Homepage/BlogContainer/BlogCards.svelte";
   import { blogsData } from "../data/blogsPageContainerData.js";
 
+
 </script>
 <div class="container">
         {#each blogsData as obj}
@@ -28,7 +29,7 @@
 .container__item{
     margin: 0px auto;
 }
-@media (max-width: 1050px) {
+@media (max-width: 1080px) {
     .container{
         grid-template-columns: 0.5fr 0.5fr ;
         grid-template-rows: 0.5fr 0.5fr ;

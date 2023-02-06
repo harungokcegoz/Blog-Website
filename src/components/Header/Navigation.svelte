@@ -2,6 +2,10 @@
 import Button from "../Button.svelte";
 import Searcher from "./Searcher.svelte";
 
+$: handlePopUp = () => {
+		showPopup = !showPopup;
+}
+
 
 </script>
 

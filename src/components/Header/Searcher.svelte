@@ -1,10 +1,8 @@
 <script>
-    function handlePopup(){
-
-    }
+    import {showPopup} from '../../stores/popUpStore.js'
 </script>
 
-<button on:click={handlePopup()}><i class="fa-solid fa-magnifying-glass"></i></button>
+<button on:click={() => showPopup.update(n => !n)}><i class="fa-solid fa-magnifying-glass"></i></button>
 
 
 <style>

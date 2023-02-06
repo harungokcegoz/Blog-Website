@@ -68,4 +68,8 @@ button:focus {
 .bx--tabs__nav-item:hover a{
 	color: white;
 }
+.bx--tabs__nav-item a{
+	color: black;
+	font-weight: 500;
+}
 

@@ -6,7 +6,8 @@
   import Footer from './components/Footer/Footer.svelte';
   import LoginPage from './routes/LoginPage.svelte';
   import Blogs from './routes/BlogsPage.svelte';
-
+  import Popup from './components/Header/SearcherPopUp.svelte';
+  import {showPopup} from './stores/popUpStore.js'
 
 	let page;
 
@@ -15,8 +16,8 @@
 	router("/blogs", () => {page = Blogs});
 
 	router.start();
-
 	
+
 
 </script>
 <div class="container">
@@ -30,6 +31,7 @@
 	<div class="container__item">
 		<main class="container__item__main">
 		<svelte:component this={page}/>
+		<Popup bind:showPopup = {$showPopup} />
 		</main>
 	</div>
 
@@ -38,7 +40,7 @@
 			<Footer/>
 		</footer>
 	</div>
-	
+
 </div>
 
 

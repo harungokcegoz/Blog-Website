@@ -12,7 +12,7 @@
         <div class="tabContainer__item">
           {#each eventsData as cityData}
                 <div class="tabContainer__item__tab">
-                   <Tab label="Events {cityData.city}"/>  
+                   <Tab label="EVENTS {cityData.city ? cityData.city.toUpperCase() : ''}"/>  
                 </div>
         
             {/each}  
@@ -49,7 +49,7 @@
         border: 1px solid rgba(0, 0, 0, 0.3);
         padding: 0.5em 1em;
         border-radius: 5px;
-        color: white;
+        font-size: 12px;
     }
     .tabContainer__item__tab:hover{
         background-color: #FF8C00;
