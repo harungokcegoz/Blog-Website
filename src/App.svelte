@@ -10,6 +10,7 @@
   import {showPopup} from './stores/popUpStore.js'
   import DetailPage from './routes/DetailPage.svelte';
   import EventsPage from './routes/EventsPage.svelte';
+ 
 
 	let page;
 
