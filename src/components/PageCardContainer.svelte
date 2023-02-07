@@ -1,16 +1,28 @@
 <script>
-  import BlogCards from "../components/Homepage/BlogContainer/BlogCards.svelte";
-  import { blogsData } from "../data/blogsPageContainerData.js";
-
+  import Card from "./Cards.svelte";
+  import { blogsData } from "../data/blogsContainerData.js";
+  import { eventsData } from "../data/eventsContainerData.js";
+  import CardContainer from "./CardContainer.svelte";
+ 
+  export let dataType;
+  let data = ""
+  if (dataType == "blogs") {
+    data = blogsData;
+  } else {
+    data = eventsData;
+  }
+  $: dataType;
 
 </script>
+
 <div class="container">
-        {#each blogsData as obj}
-            <div class="container__item">
-                <BlogCards card = {obj}/>
-            </div>
-        {/each} 
-</div>
+
+  {#each data as obj}
+    <div class="container__item">
+      <Card card={obj} dataType = {dataType}/>
+    </div>
+  {/each} 
+  </div>
 
 <style>
 .container {  

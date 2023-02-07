@@ -1,5 +1,6 @@
 <script>
   import PageCardContainer from "../components/PageCardContainer.svelte";
+  
 
 
 </script>
@@ -15,9 +16,8 @@
       </div>
   </div>
   <div class="container__items">
-    <PageCardContainer/>
+    <PageCardContainer dataType = "blogs"/>
   </div>
-
 </div>
 
 

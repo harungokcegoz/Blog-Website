@@ -8,13 +8,18 @@
   import Blogs from './routes/BlogsPage.svelte';
   import Popup from './components/Header/SearcherPopUp.svelte';
   import {showPopup} from './stores/popUpStore.js'
+  import DetailPage from './routes/DetailPage.svelte';
+  import EventsPage from './routes/EventsPage.svelte';
 
 	let page;
 
 	router("/", () => {page = Homepage});
 	router("/login", () => {page = LoginPage});
 	router("/blogs", () => {page = Blogs});
-
+	router("/blogs/:id", () => {page = DetailPage});
+	router("/events/", () => {page = EventsPage});
+	router("/events/:id", () => {page = DetailPage});
+	
 	router.start();
 	
 
@@ -66,9 +71,5 @@
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 		border-bottom: 1px rgba(0, 0, 0, 0.22) solid;
 	}
-	@media (max-width: 767px) {
-        *{
-			font-size: small;
-		}
-    } 
+	
 </style>

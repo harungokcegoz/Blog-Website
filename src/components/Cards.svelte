@@ -1,13 +1,18 @@
 <script>
+  import Label from "./Label.svelte";
+
     //label
-    export let card;
+    export let card, dataType;
 </script>
 
-<a href="/" class="link">
+<a href="/" class="link" on:click={location.href = "/"+ dataType +"/" + card.id}>
     <div class="container">
         <div class="container__img">
             <img src={card.img} alt="">
-            <div class="container__img__label">{card.category ? card.category.toUpperCase() : '' || card.city ? card.city.toUpperCase() : ''}</div>
+            <div class="container__img__label">
+               <Label card = {card}/> 
+            </div>
+            
         </div>
         <div class="container__title">
             <h3>{card.title}</h3>
@@ -62,12 +67,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        background-color: rgba(216, 216, 216, 0.993);
-        border-radius: 3px;
-        padding: 5px 10px;
-        color: black;
         margin: 0 0 5px 5px;
-        font-size: 10px;
     }
     .container__description{
         grid-area: description;

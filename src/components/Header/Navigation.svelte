@@ -13,7 +13,7 @@ $: handlePopUp = () => {
         <div class="container__item">
             <ul class="nav__menu">
                 <li class="nav__menu__item" id="link"><a href="/blogs">Blogs</a></li>
-                <li class="nav__menu__item" id="link"><a href="/">Events</a></li>
+                <li class="nav__menu__item" id="link"><a href="/events">Events</a></li>
             </ul> 
         </div>
         <div class="container__item">
